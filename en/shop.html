@@ -11,9 +11,9 @@
 
     <style></style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
     <link rel="stylesheet" type="text/css" href="/css/globals.css" />
     <link rel="stylesheet" type="text/css" href="/css/header.css" />
@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="/css/title.css" />
     <link rel="stylesheet" type="text/css" href="/css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="/css/restoration.css" />
+    <link rel="stylesheet" type="text/css" href="/css/shop.css" />
     <link rel="stylesheet" type="text/css" href="/css/preloader.css" />
     <title>BOVÉ - Концептуальний салон краси</title>
 </head>
@@ -39,47 +39,25 @@
     <div class="restoration-page-section-element-state">
         <div class="restoration-page-price-action-footnote">
             <div class="restoration-page-heading-price-action">
-                <div class="restoration-1">
-                    <div class="text-header boveheading24regulardark">Care and restoration</div>
-                    <div class="restoration-rectangle restoration-1"></div>
-                    <div class="restoration-1 bovebody20regularlight">
-                        <div class="_-restorations">
-                            <div class="text-regular">Peeling</div>
-                        </div>
-                        <div class="_-restorations">
-                            <div class="text-regular">Peeling for scalp</div>
-                        </div>
-                        <div class="_-restorations">
-                            <div class="text-regular">Hair Reconstruction</div>
-                        </div>
-                                 <div class="_-restorations">
-                            <div class="text-regular">Online consultation via photo</div>
-                        </div>
-                    </div>
-                </div>
+<div class="restoration-1">
+  <div class="text-header boveheading24regulardark">Brands</div>
+  <div class="restoration-rectangle restoration-1"></div>
+  <div id="brandsContainer" class="restoration-1 bovebody20regularlight"></div>
+</div>
                 <div class="buttons" onclick="openModal()">
-                    <div class="text_label bovebutton16regulardark">Book Now</div>
+                    <div class="text_label bovebutton16regulardark">Check Price</div>
                 </div>
             </div>
             <div class="footnote-price">
                 <p class="text-footnote bovebutton16regulardark">
-                    *Home visit service doubles the price.<br />*International service by arrangement.
+                    *For details about ordering and prices, you can contact us by phone.
                 </p>
             </div>
         </div>
-        <div class="restoration-page-tit">
-            <div class="restoration restoration-1">
-                <p class="text-header-2 boveheading24regulardark">True beauty begins with care.</p>
-                <p class="text-regular-color bovebody20regularlight">
-                    Our procedures focus not only on appearance but also on deep hair and scalp health. The specialist creates
-                    personalized treatment plans: deep nourishment, reconstruction, heat protection, restoring shine and elasticity.
-                    <br />Hair tells a lot: about fatigue, habits, life season, and even mood. We help it shine at its best.
-                </p>
-            </div>
-            <p class="text-footnote bovebutton16regulardark">
-                *For details about procedure duration and price, please contact us by phone.
-            </p>
-        </div>
+
+        <section id="products-section">
+            <div id="productsContainer"></div>
+        </section>
     </div>
 
     <footer id="footer-placeholder"></footer>
@@ -91,6 +69,10 @@
     <script src="/js/burger_menu.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="/js/shop.js"></script>
+
 </body>
 <div id="modal-popup"></div>
 

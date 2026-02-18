@@ -362,7 +362,7 @@ html[lang="en"] .s-action {
     display: flex;
     gap: 2rem;
     /* margin-top: 6.25rem; */
-    padding: 9.375rem 7rem;
+    padding: 300px 7rem 150px;
     margin: 0 auto;
     width: 90rem;
 }
@@ -466,7 +466,7 @@ html[lang="en"] .s-action {
 
  .block_-our-portfolio {
   align-items: center;
-  background-color: var(--backgrounddefaultbeige);
+ /* background-color: var(--backgrounddefaultbeige); */
   display: flex;
   gap: 136px;
   padding: 150px 216px 150px 112px;
@@ -807,6 +807,9 @@ gap:20px;
 .button-white:active {
     transform: scale(1.95);
 }
+.button-white-aboutus {
+    margin: 0 auto;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px){
@@ -839,7 +842,7 @@ min-width: 768px;
     }
 
     .services {
-        padding: 100px 2.5rem;
+        padding: 100px 1.5rem;
         /* 70px 40px */
         width: 100%;
         justify-content: space-between;
@@ -903,7 +906,7 @@ min-width: 768px;
     }
 
     .areas-of-study {
-        padding: 20px 30px;
+        padding: 20px 30px 100px;
         width: 43rem;
     }
 
